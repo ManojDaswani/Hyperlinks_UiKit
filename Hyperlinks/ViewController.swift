@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     func updateTextView() {
         
         // the values below are from extension NSAttributedString
-        let path = "https://yourwebsite.com/tos"
+        let path = "https://yourwebsite.com/termsofservice"
         let text = textView.text ?? ""
         let attributedString = NSAttributedString.makeHyperlink(for: path, in: text, as: "Terms of Service")
         textView.attributedText = attributedString
