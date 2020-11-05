@@ -16,14 +16,15 @@ class ViewController: UIViewController {
         updateTextView()
     }
     
-    func updateTextView() {
-        
-        // the values below are from extension NSAttributedString
-        let path = "https://yourwebsite.com/termsofservice"
-        let text = textView.text ?? ""
+  func updateTextView() {
+        let path = "https://wordpress.com/tos"
+        let text = textView?.text ?? ""
         let attributedString = NSAttributedString.makeHyperlink(for: path, in: text, as: "Terms of Service")
-        textView.attributedText = attributedString
+        let font = textView?.font
+        let textColor = textView?.textColor
+        textView?.attributedText = attributedString
+        textView?.font = font
+        textView?.textColor = textColor
+        
     }
-    
 }
-
