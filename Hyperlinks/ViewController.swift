@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
     
   func updateTextView() {
-        let path = "https://wordpress.com/tos"
+        let path = "https://yourwebsite.com/termsofservice"
         let text = textView?.text ?? ""
         let attributedString = NSAttributedString.makeHyperlink(for: path, in: text, as: "Terms of Service")
         let font = textView?.font
