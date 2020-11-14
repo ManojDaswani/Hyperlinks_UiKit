@@ -8,7 +8,7 @@
 import Foundation
 
 /* The reason why we are creating an NSAttributedString in order to make the text hyperlink and we need to have that accessible anywhere we create NSAttributed.
- We also wantwed to have a static string because, we could say NSAttributedString or function name that should return correctly attributed formated string
+ We also wanted to have a static string because, we could say NSAttributedString or function name that should return correctly attributed formated string
  */
 
 extension NSAttributedString {
